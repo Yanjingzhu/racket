@@ -12,7 +12,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-18.04, macos-latest]
+        os: [macos-latest]
         cify: [cify, nocify]
           
     runs-on: ${{ matrix.os }}
@@ -68,7 +68,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-18.04, macos-latest]
+        os: [macos-latest]
         cc: [gcc, clang]
         cify: [cify, nocify]
         jit: [jit, nojit]
@@ -392,7 +392,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-18.04, macos-latest]
+        os: [macos-latest]
 
     runs-on: ${{ matrix.os }}
 
